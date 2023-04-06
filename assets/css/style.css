@@ -1,0 +1,105 @@
+:root {
+    --platinum: #DCE0DF;
+    --rose: #BD8270;
+    --dark-green: #787B6A;
+    --dark-wine: #4F312F;
+    --brown: #3D3635;
+}
+
+/*   R E S E T   */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--platinum)
+}
+
+header {
+    background: var(--rose);
+}
+
+.letters {
+    color: var(--dark-wine);
+}
+
+.texts {
+    color: var(--brown)
+}
+
+/* O . é para chamar uma classe */
+.navbar {
+    font-size: 32px;
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    justify-content:flex-start;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--platinum);
+}
+
+.navbar a:hover {
+    color: var(--dark-green);
+    transition: color 0.3s;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+
+    /* O elemento menor ficou no meio do elemento maior */
+    align-items: center;
+
+    width: 75%;
+    margin: 0 auto;
+}
+
+img {
+    width: 25%;
+}
+
+.video {
+    width: 60%;
+    aspect-ratio: 16/9;
+    margin: 0 auto;
+    display: block;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.center {
+    text-align: center;
+}
+
+.tm-social {
+    width: 40px;
+    height: 40px;
+}
+
+.link-imagem {
+    margin: 10px 20px 0px;
+}
+
+footer {
+    background: var(--rose);
+    color: var(--platinum)
+}
+
+.container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Código da página contato */
+.container form {
+    margin: 50px;
+}
