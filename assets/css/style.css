@@ -13,6 +13,7 @@
     box-sizing: border-box;
 }
 
+/* Começo do código */
 body {
     background: var(--platinum)
 }
@@ -44,7 +45,7 @@ header {
 }
 
 .navbar a:hover {
-    color: var(--dark-green);
+    color: var(--dark-wine);
     transition: color 0.3s;
 }
 
@@ -99,7 +100,53 @@ footer {
     align-items: center;
 }
 
-/* Código da página contato */
-.container form {
-    margin: 50px;
+/* Página contato */
+.mainFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70vh;
+}
+
+.left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left form {
+    margin: 0 auto;
+    width: 45vw;
+    padding: 0 2rem;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: 1px solid var(--dark-green);
+    background-color: var(--rose);
+    color: var(--brown);
+}
+
+button:hover {
+    background-color: var(--dark-wine);
+    color: var(--platinum);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.right iframe {
+    width: 75%;
+    aspect-ratio: 16/9;
 }
