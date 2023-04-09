@@ -34,7 +34,8 @@
                         Nome:
                     </b>
                 </label><br>
-                <input type="text" id="nome">
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <span id="txtNome"></span>
                 <br>
                 <br>
                 <label for="email" class="texts">
@@ -42,7 +43,8 @@
                         E-mail:
                     </b>
                 </label><br>
-                <input type="email" id="email">
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <span id="txtEmail"></span>
                 <br>
                 <br>
                 <label for="assunto" class="texts">
@@ -50,10 +52,11 @@
                         Assunto:
                     </b>
                 </label><br>
-                <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                <span id="txtAssunto"></span>
                 <br>
                 <br>
-                <button>
+                <button onclick="enviar()">
                     <b>
                         Enviar
                     </b>
@@ -67,8 +70,15 @@
                 style="border:0;" 
                 allowfullscreen="" 
                 loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
+                referrerpolicy="no-referrer-when-downgrade"
+                id="mapa"
+                >
             </iframe>
+            <!--
+                 onmousemove="mapaZoom()"
+                onmouseout="mapaNormal()">
+            </iframe> 
+            -->
         </div>
     </main>
     
@@ -96,5 +106,7 @@
         <br>
 
     </footer>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
